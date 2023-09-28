@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --red:  hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue:  hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%);
+    --grayishblue: hsl(246, 25%, 77%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--red);
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% auto;
+}
+
+.first-container{
+    margin: 12% 0;
+    width: 30%;
+    color: white;
+}
+
+.first-container>.first-content{
+    font-size: 40px;
+}
+
+.first-container>.second-content{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+.second-container{
+    width: 30%;
+    /* background-color: white; */
+}
+
+.top-form-content{
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    background-color: var(--blue);
+    width: 100%;
+    box-shadow: 0 7px 0 rgba(3, 3, 3, .2);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+
+form{
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 7px 0 rgba(3, 3, 3, .2);
+}
+
+form input {
+    padding: 15px;
+    border-radius: 12px;
+    border-style: ridge;
+    border-width: 0.2px;
+    outline: none;
+    margin-top: 20px;
+}
+
+form button{
+    margin-top: 20px;
+    background-color: var(--green);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    border-style: none;
+}
+
+form .xtra-text{
+    text-align: center;
+    color: var(--green);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.xtra-text::before{
+    font-size: 11px;
+    content: "By clicking the button,you are agreeing to our";
+    color: var(--grayishblue);
+}
+
+@media screen and (max-width:480px) {
+    body{
+        overflow-y: scroll;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .first-container{
+        width: 100%;
+    }
+
+    .first-container>.first-content{
+        text-align: center;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+
+    .first-container>.second-content{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    form{
+        margin-bottom: 10px;
+    }
+
+    .top-form-content{
+        font-size: 12px;
+    }
+
+    .second-container{
+        width: 90%;
+    }
+}
