@@ -73,7 +73,7 @@ form{
 
 form input {
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 5px;
     border-style: ridge;
     border-width: 0.2px;
     outline: none;
