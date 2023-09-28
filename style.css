@@ -34,6 +34,7 @@ body{
 
 .first-container>.first-content{
     font-size: 40px;
+    font-weight: 900;
 }
 
 .first-container>.second-content{
